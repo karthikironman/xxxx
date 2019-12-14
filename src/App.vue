@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1 style="height:5rem; margin:0; color:white" class="text-center"> Socket and IOT </h1>
+  <navigation/>
+  <router-view />
+  <ftr/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import navigation from '@/components/widgets/navigation'
+import ftr from '@/components/widgets/footer'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    navigation,
+    ftr
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
