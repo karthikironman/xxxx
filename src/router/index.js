@@ -25,8 +25,18 @@ export default new Router({
         component: about
       },
       {
-        path: '*',
+        path: '/',
         name: 'front',
+        component: front
+      },
+      {
+        path: '',
+        name: 'front',
+        component: front
+      },
+      {
+        path: '*',
+        name: '404',
         component: fournotfour
       }
   ]
